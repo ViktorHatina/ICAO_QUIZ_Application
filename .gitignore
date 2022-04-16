@@ -49,5 +49,7 @@ Temporary Items
 *.wasm
 *.wat
 *.xhtml
+.idea
+
 
 # End of https://www.toptal.com/developers/gitignore/api/web,macos
