@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quiz" class="justify-center flex-column">
+            <div id="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                    Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <div class="quiz_score">
+                        <div class="score_correct hud-prefix">Correct</div>
+                        <div class="score_incorrect hud-prefix">Incorrect</div>
+                        <div id="s_correct_count">0</div>
+                        <div id="s_incorrect_count">0</div>
+                    </div>
+                </div>
+        </div>
+        <h2 id="question">What is the answer to this question?</h2>
+        <div class="choice-container">
+            <p class="choice-text" data-number="1">Choice 1</p>
+        </div>
+        <div class="choice-container">
+            <p class="choice-text" data-number="2">Choice 2</p>
+        </div>
+        <div class="choice-container">
+            <p class="choice-text" data-number="3">Choice 3</p>
+        </div>
+        <div class="choice-container">
+            <p class="choice-text" data-number="4">Choice 4</p>
+        </div>
+        <div class="controls">
+            <button id="next-btn" class="next-btn btn">Next</button>
+        </div>
+    </div>
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>

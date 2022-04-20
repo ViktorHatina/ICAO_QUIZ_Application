@@ -1,0 +1,32 @@
+.quiz_score{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 200px;
+    font-family: 'Times New Roman';
+    border: 1px solid rgb(25, 65, 110);
+    background-color: rgb(25, 65, 110,0.25) ;
+}
+
+.score_correct,
+.score_incorrect,
+.s_correct_count,
+.s_incorrect_count {
+    padding: 5px;
+    text-align: center;
+}
+
+.score_correct{
+    color: #28a745;
+    border-bottom: 1px solid rgb(25, 65, 110);
+}
+
+.score_incorrect{
+    color: #dc3545;
+    border-bottom: 1px solid rgb(25, 65, 110);
+}
+.s_correct_count{
+
+}
+.s_incorrect_count{
+
+}
