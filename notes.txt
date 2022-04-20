@@ -1,0 +1,19 @@
+        const classToApply = 'incorrect';
+            if(selectedAnswer == currentQuestion.answer) { let classToApply = 'correct';
+            }
+
+        nextButton.addEventListener('click', getNewQuestion)
+
+
+                        <p class="hud-prefix">
+                            Correct :
+                        </p>
+                        <p class='hud-prefix'>
+                             Wrong
+                        </p>
+                        <h1 class="hud-main-text" id="score">
+                            0 :
+                        </h1>
+                        <h1 class="hud-main-text" id="score">
+                             0
+                        </h1>
