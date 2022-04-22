@@ -1,7 +1,5 @@
 const question = document.getElementById("question");
-console.log(question);
 const choices = Array.from(document.getElementsByClassName("choice-text"));
-console.log(choices);
 const progressText = document.getElementById("progressText");
 const scoreCorrectText = document.getElementById('s_correct_count');
 const scoreIncorrectText = document.getElementById('s_incorrect_count');
@@ -10,6 +8,7 @@ const nextButton = document.getElementById('next-btn');
 let currentQuestion = {};
 let acceptingAnswers = false;
 let scoreCorrect = 0;
+let wrong_question = [];
 let scoreIncorrect = 0;
 let questionCounter = 0;
 let availableQuestions = [];
@@ -67,12 +66,25 @@ startGame = () => {
     availableQuestions = [...questions]; /*using the spread operator - to get a full copy of all questions from questions array to available questions*/
     getNewQuestion();
 };
+summarize = () => {
+        localStorage.setItem("lastScore", scoreCorrect);
+        localStorage.setItem('wrong_que', wrong_question)
+        //Reset Game
+        scoreCorrect = 0;
+        wrong_question = [];
+        //Go to Summary
+        return window.location.assign("summary.html");
+}
+
+document.getElementById('finish-btn').onclick = function() {
+    summarize();
+    console.log('Finishing up!')
+}
 
 getNewQuestion = () => {
+    resetButtonStatus();
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        localStorage.setItem("mostRecentScore", score);
-        //go to the end page
-        return window.location.assign("end.html");
+        summarize();
     }
     questionCounter++;
     //To get a random question
@@ -103,9 +115,11 @@ choices.forEach(choice => {
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        console.log('selected option')
-        console.log(selectedChoice)
         const selectedAnswer = selectedChoice.dataset["number"];
+        const ans = currentQuestion.answer;
+        //Get Correct answer Text
+        const corrOptionStr = 'currentQuestion.choice' + ans;
+        const correct_answer = eval(corrOptionStr);
 
         //const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
         let classToApply = 'incorrect';
@@ -114,50 +128,67 @@ choices.forEach(choice => {
         }
         selectedChoice.parentElement.classList.add(classToApply);
 
-        //this iterates over options and highlights (adds correct class) to the correct option answer
+        //Iterate over choices and add styling class
         choices.forEach(choice => {
             if (choice.dataset['number'] == currentQuestion.answer) {
                 const correct_answer = choice
                 console.log('correct ans')
                 console.log(correct_answer);
                 choice.parentElement.classList.add('correct');
-                //figure out a way to use next button to move to next question, as opposed to timer.
-                setTimeout(() => {
-                    choice.parentElement.classList.remove('correct')
-                }, 1500);
             }
         })
 
         if (classToApply === "correct") {
-            incrementCorrectScore(SCORE_BONUS)
+            buttonStatus(true)
+            incrementCorrectScore(SCORE_BONUS);
+            setTimeout(() => {
+                selectedChoice.parentElement.classList.remove(classToApply)
+                getNewQuestion();
+            }, 500);
+
         }else{
+            buttonStatus(false)
             incrementIncorrectScore(SCORE_BONUS)
+            wrong_question.push(currentQuestion.question);
+            wrong_question.push(correct_answer);
+            console.log('wrong question array')
+            console.log(wrong_question);
+            document.getElementById('next-btn').onclick = function() {
+                selectedChoice.parentElement.classList.remove(classToApply);
+                choices.forEach(choice=> {
+                    choice.parentElement.classList.remove('correct');
+                })
+                getNewQuestion();
+            }
         }
 
-        //figure out a way to use next button to move to next question, as opposed to timer.
+        /* //figure out a way to use next button to move to next question, as opposed to timer.
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion();
         }, 1500);
+         */
+
         });
     });
 
 //correct_answer =()=> {}
-
-/*
-reset = () => {
-    const ans = currentQuestion.answer;
-    const corrOptionStr = 'currentQuestion.choice' + ans;
-    const correct_answer = eval(corrOptionStr);
-
-//corrOptionStr.parentElement.classList.add('correct');
-    console.log(corrOptionStr);
-    console.log(correct_answer);
-    if(classToApply == 'incorrect') {
-        //selectedChoice.parentElement.classList.remove(classToApply);
+buttonStatus = boolean => {
+    nextButton.disabled = boolean;
+    if(boolean == true){
+        nextButton.classList.add('disabled');
+    }else{
+        nextButton.classList.add('encourage')
     }
 }
- */
+resetButtonStatus = () =>{
+    nextButton.classList.remove('disabled');
+    nextButton.classList.remove('encourage');
+}
+
+getRightAnswer = () => {
+
+}
 
 incrementCorrectScore = num => {
     scoreCorrect += num;
@@ -168,7 +199,4 @@ incrementIncorrectScore = num => {
     scoreIncorrectText.innerText = scoreIncorrect;
 };
 
-
 startGame();
-
-console.log(currentQuestion.answer);

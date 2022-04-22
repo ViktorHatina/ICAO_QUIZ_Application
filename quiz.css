@@ -109,3 +109,10 @@
     margin-top: 6rem;
     text-align: center;
 }
+
+.disabled{
+    background-color: rgb(33, 36, 40,0.5);
+}
+.encourage{
+    background-color: rgb(25, 65, 110, 0.5);
+}

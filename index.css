@@ -16,6 +16,7 @@ h2,
 h3,
 h4{
     margin-bottom: 1rem;
+    color: rgb(25, 65, 110);
 
 }
 
@@ -142,4 +143,22 @@ input::placeholder {
 #main-title{
     margin-top: 3rem;
     /*text-shadow: 2px 2px #aaaaaa;*/
+}
+
+#finalScore{
+    color: rgb(25, 65, 110);
+}
+
+#review{
+    border: 0.1rem solid rgb(25, 65, 110);
+    background-color: aliceblue;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    height: fit-content;
+    color: rgb(25, 65, 110);
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+
+
 }

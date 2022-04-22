@@ -17,3 +17,18 @@
                         <h1 class="hud-main-text" id="score">
                              0
                         </h1>
+
+/*
+reset = () => {
+    const ans = currentQuestion.answer;
+    const corrOptionStr = 'currentQuestion.choice' + ans;
+    const correct_answer = eval(corrOptionStr);
+
+//corrOptionStr.parentElement.classList.add('correct');
+    console.log(corrOptionStr);
+    console.log(correct_answer);
+    if(classToApply == 'incorrect') {
+        //selectedChoice.parentElement.classList.remove(classToApply);
+    }
+}
+ */
