@@ -111,8 +111,10 @@
 }
 
 .disabled{
-    background-color: rgb(33, 36, 40,0.5);
+    background-color: rgba(211, 211, 211, 0.5);
+    color: #aaaaaa;
 }
+
 .encourage{
-    background-color: rgb(25, 65, 110, 0.5);
+    background-color: rgba(150, 209, 238, 0.5);
 }
