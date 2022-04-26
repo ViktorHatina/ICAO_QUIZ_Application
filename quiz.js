@@ -101,7 +101,7 @@ getNewQuestion = () => {
     //To get a random question
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
     //Update the progress bar
-    progressBarFull.style.width = `${(questionCounter / (MAX_QUESTIONS+1)) * 100}%`;
+    progressBarFull.style.width = `${(questionCounter / (MAX_QUESTIONS)) * 100}%`;
 
     //get rid of the current question
     availableQuestions.splice(questionIndex, 1);
