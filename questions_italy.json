@@ -1,0 +1,266 @@
+[
+  {
+    "question": "Bari/Palese",
+    "choice1" : "CYYZ",
+    "choice2" : "CYUL",
+    "choice3" : "BKPR",
+    "choice4" : "FACT",
+    "answer" : 2
+  },
+  {
+    "question": "Pescara",
+    "choice1": "LOXT",
+    "choice2": "LOWL",
+    "choice3": "LOWS",
+    "choice4": "LOLS",
+    "answer": 3
+  },
+  {
+    "question": "Brindisi",
+    "choice1": "ZBAA",
+    "choice2": "ZBAD",
+    "choice3": "ZHHH",
+    "choice4": "BIKF",
+    "answer": 1
+  },
+  {
+    "question": "Lamezia Terme",
+    "choice1": "KORD",
+    "choice2": "EPPO",
+    "choice3": "EBBR",
+    "choice4": "BKPR",
+    "answer": 4
+  },
+  {
+    "question": "Comiso",
+    "choice1": "VTSP",
+    "choice2": "ZSPD",
+    "choice3": "VTBS",
+    "choice4": "VCBI",
+    "answer": 3
+  },
+  {
+    "question": "Catania/Fontanarossa",
+    "choice1": "CYYZ",
+    "choice2": "CYUL",
+    "choice3": "BKPR",
+    "choice4": "FACT",
+    "answer": 2
+  },
+  {
+    "question": "Palermo",
+    "choice1": "LOXT",
+    "choice2": "LOWL",
+    "choice3": "LOWS",
+    "choice4": "LOLS",
+    "answer": 3
+  },
+  {
+    "question": "Trapani/Birgi [mil]",
+    "choice1": "ZBAA",
+    "choice2": "ZBAD",
+    "choice3": "ZHHH",
+    "choice4": "BIKF",
+    "answer": 1
+  },
+  {
+    "question": "Alghero",
+    "choice1": "KORD",
+    "choice2": "EPPO",
+    "choice3": "EBBR",
+    "choice4": "BKPR",
+    "answer": 4
+  },
+  {
+    "question": "Olbia",
+    "choice1": "VTSP",
+    "choice2": "ZSPD",
+    "choice3": "VTBS",
+    "choice4": "VCBI",
+    "answer": 3
+  },
+  {
+    "question": "Milano-Malpensa",
+    "choice1": "CYYZ",
+    "choice2": "CYUL",
+    "choice3": "BKPR",
+    "choice4": "FACT",
+    "answer": 2
+  },
+  {
+    "question": "Bergamo",
+    "choice1": "LOXT",
+    "choice2": "LOWL",
+    "choice3": "LOWS",
+    "choice4": "LOLS",
+    "answer": 3
+  },
+  {
+    "question": "Torino-Caselle",
+    "choice1": "ZBAA",
+    "choice2": "ZBAD",
+    "choice3": "ZHHH",
+    "choice4": "BIKF",
+    "answer": 1
+  },
+  {
+    "question": "Genova",
+    "choice1": "KORD",
+    "choice2": "EPPO",
+    "choice3": "EBBR",
+    "choice4": "BKPR",
+    "answer": 4
+  },
+  {
+    "question": "Milano-Linate",
+    "choice1": "VTSP",
+    "choice2": "ZSPD",
+    "choice3": "VTBS",
+    "choice4": "VCBI",
+    "answer": 3
+  },
+  {
+    "question": "Aviano [Mil]",
+    "choice1": "CYYZ",
+    "choice2": "CYUL",
+    "choice3": "BKPR",
+    "choice4": "FACT",
+    "answer": 2
+  },
+  {
+    "question": "Bolzano",
+    "choice1": "LOXT",
+    "choice2": "LOWL",
+    "choice3": "LOWS",
+    "choice4": "LOLS",
+    "answer": 3
+  },
+  {
+    "question": "Bologna",
+    "choice1": "ZBAA",
+    "choice2": "ZBAD",
+    "choice3": "ZHHH",
+    "choice4": "BIKF",
+    "answer": 1
+  },
+  {
+    "question": "Treviso",
+    "choice1": "KORD",
+    "choice2": "EPPO",
+    "choice3": "EBBR",
+    "choice4": "BKPR",
+    "answer": 4
+  },
+  {
+    "question": "Brescia",
+    "choice1": "VTSP",
+    "choice2": "ZSPD",
+    "choice3": "VTBS",
+    "choice4": "VCBI",
+    "answer": 3
+  },
+  {
+    "question": "Trieste",
+    "choice1": "CYYZ",
+    "choice2": "CYUL",
+    "choice3": "BKPR",
+    "choice4": "FACT",
+    "answer": 2
+  },
+  {
+    "question": "Rimini/Miramare",
+    "choice1": "LOXT",
+    "choice2": "LOWL",
+    "choice3": "LOWS",
+    "choice4": "LOLS",
+    "answer": 3
+  },
+  {
+    "question": "Verona/Villafranca",
+    "choice1": "ZBAA",
+    "choice2": "ZBAD",
+    "choice3": "ZHHH",
+    "choice4": "BIKF",
+    "answer": 1
+  },
+  {
+    "question": "Ancona/Falconara",
+    "choice1": "KORD",
+    "choice2": "EPPO",
+    "choice3": "EBBR",
+    "choice4": "BKPR",
+    "answer": 4
+  },
+  {
+    "question": "Venezia/Tessera",
+    "choice1": "VTSP",
+    "choice2": "ZSPD",
+    "choice3": "VTBS",
+    "choice4": "VCBI",
+    "answer": 3
+  },
+  {
+    "question": "Roma-Ciampino",
+    "choice1": "CYYZ",
+    "choice2": "CYUL",
+    "choice3": "BKPR",
+    "choice4": "FACT",
+    "answer": 2
+  },
+  {
+    "question": "Pratica di Mare [Mil]",
+    "choice1": "LOXT",
+    "choice2": "LOWL",
+    "choice3": "LOWS",
+    "choice4": "LOLS",
+    "answer": 3
+  },
+  {
+    "question": "Roma-Fiumicino",
+    "choice1": "ZBAA",
+    "choice2": "ZBAD",
+    "choice3": "ZHHH",
+    "choice4": "BIKF",
+    "answer": 1
+  },
+  {
+    "question": "Napoli",
+    "choice1": "KORD",
+    "choice2": "EPPO",
+    "choice3": "EBBR",
+    "choice4": "BKPR",
+    "answer": 4
+  },
+  {
+    "question": "Pisa/San Giusto",
+    "choice1": "VTSP",
+    "choice2": "ZSPD",
+    "choice3": "VTBS",
+    "choice4": "VCBI",
+    "answer": 3
+  },
+  {
+    "question": "Firenze",
+    "choice1": "CYYZ",
+    "choice2": "CYUL",
+    "choice3": "BKPR",
+    "choice4": "FACT",
+    "answer": 2
+  },
+  {
+    "question": "Grosseto [Mil]",
+    "choice1": "LOXT",
+    "choice2": "LOWL",
+    "choice3": "LOWS",
+    "choice4": "LOLS",
+    "answer": 3
+  },
+  {
+    "question": "Perugia",
+    "choice1": "ZBAA",
+    "choice2": "ZBAD",
+    "choice3": "ZHHH",
+    "choice4": "BIKF",
+    "answer": 1
+  }
+]

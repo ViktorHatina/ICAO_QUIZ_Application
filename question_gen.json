@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Montreal--Tradeau International Airport",
+    "choice1": "CYYZ",
+    "choice2": "CYUL",
+    "choice3": "BKPR",
+    "choice4": "FACT",
+    "answer": 2
+  },
+  {
+    "question": "Salzburg",
+    "choice1": "LOXT",
+    "choice2": "LOWL",
+    "choice3": "LOWS",
+    "choice4": "LOLS",
+    "answer": 3
+  },
+  {
+    "question": "Bejing-Capital",
+    "choice1": "ZBAA",
+    "choice2": "ZBAD",
+    "choice3": "ZHHH",
+    "choice4": "BIKF",
+    "answer": 1
+  },
+  {
+    "question": "Pristina",
+    "choice1": "KORD",
+    "choice2": "EPPO",
+    "choice3": "EBBR",
+    "choice4": "BKPR",
+    "answer": 4
+  },
+  {
+    "question": "Bangkok-Suvarnabhumi",
+    "choice1": "VTSP",
+    "choice2": "ZSPD",
+    "choice3": "VTBS",
+    "choice4": "VCBI",
+    "answer": 3
+  }
+]

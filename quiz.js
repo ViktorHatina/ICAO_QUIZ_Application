@@ -13,52 +13,307 @@ let scoreIncorrect = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+
+//let questions = [];
+
 let questions = [
     {
-        question: "Montreal--Tradeau International Airport",
-        choice1: "CYYZ",
-        choice2: "CYUL",
-        choice3: "BKPR",
-        choice4: "FACT",
+        question: "Bari/Palese",
+        choice1: "LIBP",
+        choice2: "LIBD",
+        choice3: "LICC",
+        choice4: "LIBR",
         answer: 2
     },
     {
-        question: "Salzburg",
-        choice1: "LOXT",
-        choice2: "LOWL",
-        choice3: "LOWS",
-        choice4: "LOLS",
-        answer: 3
-    },
-    {
-        question: "Bejing-Capital",
-        choice1: "ZBAA",
-        choice2: "ZBAD",
-        choice3: "ZHHH",
-        choice4: "BIKF",
+        question: "Pescara",
+        choice1: "LIBP",
+        choice2: "LICB",
+        choice3: "LIBR",
+        choice4: "LICJ",
         answer: 1
     },
     {
-        question: "Pristina",
-        choice1: "KORD",
-        choice2: "EPPO",
-        choice3: "EBBR",
-        choice4: "BKPR",
+        question: "Brindisi",
+        choice1: "LIPH",
+        choice2: "LIBR",
+        choice3: "LIBD",
+        choice4: "LICB",
+        answer: 2
+    },
+    {
+        question: "Lamezia Terme",
+        choice1: "LICB",
+        choice2: "LICC",
+        choice3: "LICT",
+        choice4: "LICA",
         answer: 4
     },
     {
-        question: "Bangkok-Suvarnabhumi",
-        choice1: "VTSP",
-        choice2: "ZSPD",
-        choice3: "VTBS",
-        choice4: "VCBI",
+        question: "Comiso",
+        choice1: "LIEO",
+        choice2: "LIPA",
+        choice3: "LICB",
+        choice4: "LIMC",
         answer: 3
+    },
+    {
+        question: "Catania/Fontanarossa",
+        choice1: "LICT",
+        choice2: "LICC",
+        choice3: "LIEE",
+        choice4: "LIPE",
+        answer: 2
+    },
+    {
+        question: "Palermo",
+        choice1: "LICJ",
+        choice2: "LIPX",
+        choice3: "LIRF",
+        choice4: "LIMC",
+        answer: 1
+    },
+    {
+        question: "Trapani/Birgi [mil]",
+        choice1: "LICT",
+        choice2: "LIEA",
+        choice3: "LICB",
+        choice4: "LIME",
+        answer: 1
+    },
+    {
+        question: "Alghero",
+        choice1: "LICC",
+        choice2: "LIMF",
+        choice3: "LIEE",
+        choice4: "LIEA",
+        answer: 4
+    },
+    {
+        question: "Cagliari/Elmas",
+        choice1: "LIEA",
+        choice2: "LIEE",
+        choice3: "LIMC",
+        choice4: "LIPB",
+        answer: 2
+    },
+    {
+        question: "Olbia",
+        choice1: "LICC",
+        choice2: "LIEE",
+        choice3: "LIEA",
+        choice4: "LIEO",
+        answer: 4
+    },
+    {
+        question: "Milano-Malpensa",
+        choice1: "LIMF",
+        choice2: "LIMC",
+        choice3: "LIML",
+        choice4: "LICT",
+        answer: 2
+    },
+    {
+        question: "Bergamo",
+        choice1: "LIME",
+        choice2: "LIMJ",
+        choice3: "LIBR",
+        choice4: "LIBD",
+        answer: 1
+    },
+    {
+        question: "Torino-Caselle",
+        choice1: "LIMF",
+        choice2: "LIMJ",
+        choice3: "LIML",
+        choice4: "LIME",
+        answer: 1
+    },
+    {
+        question: "Genova",
+        choice1: "LIPQ",
+        choice2: "LIMF",
+        choice3: "LIME",
+        choice4: "LIMJ",
+        answer: 4
+    },
+    {
+        question: "Milano-Linate",
+        choice1: "LIMJ",
+        choice2: "LIME",
+        choice3: "LIML",
+        choice4: "LIMC",
+        answer: 3
+    },
+    {
+        question: "Aviano [Mil]",
+        choice1: "LIMF",
+        choice2: "LIPA",
+        choice3: "LIPG",
+        choice4: "LIEA",
+        answer: 2
+    },
+    {
+        question: "Bolzano",
+        choice1: "LICB",
+        choice2: "LIPQ",
+        choice3: "LIPB",
+        choice4: "LIPA",
+        answer: 3
+    },
+    {
+        question: "Bologna",
+        choice1: "LIPE",
+        choice2: "LIPB",
+        choice3: "LIPX",
+        choice4: "LIBR",
+        answer: 1
+    },
+    {
+        question: "Treviso",
+        choice1: "LIPZ",
+        choice2: "LIRS",
+        choice3: "EBBR",
+        choice4: "LIPH",
+        answer: 4
+    },
+    {
+        question: "Brescia",
+        choice1: "LIPQ",
+        choice2: "LIRP",
+        choice3: "LIPO",
+        choice4: "LIPB",
+        answer: 3
+    },
+    {
+        question: "Trieste",
+        choice1: "LIPO",
+        choice2: "LIPQ",
+        choice3: "LIPR",
+        choice4: "LIRE",
+        answer: 2
+    },
+    {
+        question: "Rimini/Miramare",
+        choice1: "LIRP",
+        choice2: "LIPX",
+        choice3: "LIPR",
+        choice4: "LIPY",
+        answer: 3
+    },
+    {
+        question: "Verona/Villafranca",
+        choice1: "LIPX",
+        choice2: "LIPY",
+        choice3: "LIPH",
+        choice4: "LIPZ",
+        answer: 1
+    },
+    {
+        question: "Ancona/Falconara",
+        choice1: "LIPR",
+        choice2: "LIPX",
+        choice3: "LIPZ",
+        choice4: "LIPY",
+        answer: 4
+    },
+    {
+        question: "Venezia/Tessera",
+        choice1: "LIRF",
+        choice2: "LIPQ",
+        choice3: "LIPZ",
+        choice4: "LIRE",
+        answer: 3
+    },
+    {
+        question: "Roma-Ciampino",
+        choice1: "LIRE",
+        choice2: "LIRA",
+        choice3: "LIRF",
+        choice4: "LIRN",
+        answer: 2
+    },
+    {
+        question: "Pratica di Mare [Mil]",
+        choice1: "LIRS",
+        choice2: "LIRA",
+        choice3: "LIRE",
+        choice4: "LIPB",
+        answer: 3
+    },
+    {
+        question: "Roma-Fiumicino",
+        choice1: "LIRF",
+        choice2: "LIPZ",
+        choice3: "LIRP",
+        choice4: "LIRS",
+        answer: 1
+    },
+    {
+        question: "Napoli",
+        choice1: "LIRA",
+        choice2: "LIPY",
+        choice3: "LIRP",
+        choice4: "LIRN",
+        answer: 4
+    },
+    {
+        question: "Pisa/San Giusto",
+        choice1: "LIRQ",
+        choice2: "LIRP",
+        choice3: "LIPR",
+        choice4: "LIRZ",
+        answer: 2
+    },
+    {
+        question: "Firenze",
+        choice1: "LIPZ",
+        choice2: "LIRQ",
+        choice3: "LIRS",
+        choice4: "LICT",
+        answer: 2
+    },
+    {
+        question: "Grosseto [Mil]",
+        choice1: "LICB",
+        choice2: "LIPX",
+        choice3: "LIRE",
+        choice4: "LIRS",
+        answer: 4
+    },
+    {
+        question: "Perugia",
+        choice1: "LIRZ",
+        choice2: "LIRF",
+        choice3: "LIPQ",
+        choice4: "LIPO",
+        answer: 1
     }
 ];
 
+/*
+fetch('questions_italy.json')
+    .then((res) => {
+        return res.json();
+    })
+    .then((loadedQuestions) => {
+        questions = loadedQuestions;
+        console.log(loadedQuestions);
+        startGame();
+    })
+    .catch((error) => {
+    console.error(error);
+    });
+
+ */
+
+console.log('Questions After Loading')
+console.log(questions);
+
+
 //CONSTANTS
 const SCORE_BONUS = 1;
-const MAX_QUESTIONS = 5;
+const MAX_QUESTIONS = 33;
 
 startGame = () => {
     questionCounter = 0;
@@ -69,6 +324,7 @@ startGame = () => {
 summarize = () => {
         localStorage.setItem("lastScore", scoreCorrect);
         localStorage.setItem('wrong_que', wrong_question)
+        localStorage.setItem('totalQuestions', MAX_QUESTIONS)
         //Reset Game
         scoreCorrect = 0;
         wrong_question = [];

@@ -1,10 +1,11 @@
 const finalScore = document.getElementById('finalScore');
 const lastScore = localStorage.getItem('lastScore');
 const review = document.getElementById('review');
+const totalQuestions = localStorage.getItem('totalQuestions')
 
 const wrong_que = localStorage.getItem('wrong_que');
 
-finalScore.innerText = lastScore;
+finalScore.innerText = `${lastScore}/${totalQuestions}`;
 console.log(finalScore);
 
 /*
@@ -25,7 +26,7 @@ if(!wrong_que) {
 }else{
     for (let i = 0; i < text.length; i+=2) {
         console.log(i);
-        review.innerText += "Area: " + text[i] + "\t ||  " + "Correct Answer: " + text[i+1] + '\n';
+        review.innerText += text[i] + "\t ||\t "  + text[i+1] + '\n';
     }
 }
 
