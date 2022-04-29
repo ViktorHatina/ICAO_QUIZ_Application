@@ -1,12 +1,12 @@
 const finalScore = document.getElementById('finalScore');
 const lastScore = localStorage.getItem('lastScore');
 const review = document.getElementById('review');
-const totalQuestions = localStorage.getItem('totalQuestions')
+
 
 const wrong_que = localStorage.getItem('wrong_que');
 
-finalScore.innerText = `${lastScore}/${totalQuestions}`;
-console.log(finalScore);
+finalScore.innerText = lastScore;
+
 
 /*
 for (let i = 0; i < wrong_que.length*2; i+=2) {

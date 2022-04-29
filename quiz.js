@@ -324,7 +324,6 @@ startGame = () => {
 summarize = () => {
         localStorage.setItem("lastScore", scoreCorrect);
         localStorage.setItem('wrong_que', wrong_question)
-        localStorage.setItem('totalQuestions', MAX_QUESTIONS)
         //Reset Game
         scoreCorrect = 0;
         wrong_question = [];
